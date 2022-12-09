@@ -1,0 +1,7 @@
+# Kandle Theme for R Studio
+
+The theme I use for R Studio, carefully handcrafted to make the world's ugliest IDE look like [VS Code](https://github.com/tal7aouy/theme)! Support for rainbow parentheses, parenthesis pair highlight and function call highlight.
+
+I reccomend using it in combination with [Darkstudio](https://github.com/rileytwo/darkstudio).
+ 
+![img](screenshot.png)
