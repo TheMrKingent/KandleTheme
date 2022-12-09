@@ -4,7 +4,7 @@ The theme I use for R Studio, carefully handcrafted to make the world's ugliest 
 
 I recommend using it in combination with [Darkstudio](https://github.com/rileytwo/darkstudio).
  
-![screenshot](https://user-images.githubusercontent.com/44241033/206778696-04578982-1aec-4030-aa64-3e935d449282.png)
+![mainview](img/mainview.png)
 
 ## Installation
 
