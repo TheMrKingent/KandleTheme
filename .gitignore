@@ -1,2 +1,3 @@
-deploy
-.Kandle.css
+deploy.R
+Kandle.css
+.gitignore
