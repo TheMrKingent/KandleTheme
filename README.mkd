@@ -5,3 +5,7 @@ The theme I use for R Studio, carefully handcrafted to make the world's ugliest 
 I reccomend using it in combination with [Darkstudio](https://github.com/rileytwo/darkstudio).
  
 ![img](screenshot.png)
+
+## Installation
+
+``rstudioapi::addTheme("https://github.com/TheMrKingent/KandleTheme/raw/main/Kandle.rstheme", apply = TRUE)``
