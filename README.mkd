@@ -8,4 +8,4 @@ I reccomend using it in combination with [Darkstudio](https://github.com/rileytw
 
 ## Installation
 
-``rstudioapi::addTheme("https://github.com/TheMrKingent/KandleTheme/raw/main/Kandle.rstheme", apply = TRUE)``
+``rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/Kandle.rstheme", apply = TRUE)``
