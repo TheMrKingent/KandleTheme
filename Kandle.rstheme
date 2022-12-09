@@ -3,7 +3,7 @@
 /* Modified for RStudio Dark Mode from the Yule theme (UUID: e1d3b33f-ae0a-b90b-262b-57c4874033ae) */
 
 .ace_gutter {
-  background: #262C33;
+  background: #282C34;
   color: #bac4c3;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .ace_editor, .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph, .rstudio-themes-flat.ace_editor_theme, .rstudio-themes-flat .ace_editor_theme {
-  background-color: #282c34;
+  background-color: #282C34;
   color: #bac4c3;
 }
 
@@ -70,6 +70,10 @@
   background-color: #23282E;
 }
 
+.ace_indent_guide {
+  color: #bac4c3;
+}
+
 .ace_marker-layer .ace_selected-word {
   border: 1px solid rgba(240, 200, 91, 0.75);
 }
@@ -94,7 +98,7 @@
 }
 
 .editor_dark .ace_paren_color_1 {
-  color: #7ac5f1;
+  color: #56B4E9;
 }
 
 .editor_dark .ace_paren_color_2 {
@@ -169,7 +173,6 @@
 
 .ace_support.ace_function {
   color: #5e9fce;
-  font-weight: 500;
 }
 
 .ace_support.ace_function.ace_codebegin {
