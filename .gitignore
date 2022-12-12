@@ -1,4 +1,4 @@
 deploy.R
-Kandle.css
+inst/themes/Kandle.css
 dummyCode.R
-mojaveTemplate.css
+KandleTheme.Rproj
