@@ -1,0 +1,4 @@
+Name: Toggle plot transparency
+Description: Toggles plot transparency on and off
+Binding: togglePlotTransparency
+Interactive: false
