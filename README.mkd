@@ -1,11 +1,54 @@
 # Kandle Theme for R Studio
 
-The theme I use for R Studio, carefully handcrafted to make the world's ugliest IDE look like [VS Code](https://github.com/tal7aouy/theme)! Support for rainbow parentheses, parenthesis pair highlight and function call highlight.
-
-I recommend using it in combination with [Darkstudio](https://github.com/rileytwo/darkstudio).
+Just a theme for R Studio, carefully handcrafted to make the world's ugliest IDE look like [VS Code](https://github.com/tal7aouy/theme)! 
+Supports darker plot area, rainbow parentheses, parentheses pair highlight, and function call highlight.
  
+![code](img/code.png)
+
+
+## Darker plot area
+
+If you find the plot area to be too bright, this theme implements a darker transparent plot background that highlights to white (or to the real background, if not white) only when mouse hovering over it (see picture for details). This behavior can eventually be turned on and off. This  absolutely does not change the plot's original properties (i.e. when exporting).
+
+![plotscreencap.gif](img/plotscreencap.gif)
+
+
+## Parentheses pair highlight
+
+Yes, a very nice animation.
+
+![par.gif](img/par.gif)
+
+
+## Other stuff
+
+I recommend in `Tools > Global options > Code > Display` activating `Highlight R Function Calls` and `Rainbow Parentheses`.
+
+
+I also recommend using it in combination with [Darkstudio](https://github.com/rileytwo/darkstudio).
+
 ![mainview](img/mainview.png)
 
-## Installation
 
-``rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/Kandle.rstheme", apply = TRUE)``
+## Usage
+
+Install:
+```r
+devtools::install_github('TheMrKingent/KandleTheme')
+KandleTheme::installKandle()
+```
+
+To change the behavior of the plot area between white-on-hover and always-white background, use:
+
+```r
+KandleTheme::togglePlotTransparency()
+```
+
+Alternately, the package will  automatically add an addin to R Studio under `Addins > KANDLETHEME > Toggle Plot Transparency` which will just call the above function. Restarting R Studio may be necessary to make the addin appear in the list. I find particularly useful to bind the addin to a key to quickly change the plot's behavior. This can be done in `Tools > Addins > Browse addins > Keyboard shortcuts` and just filling in the field for `Toggle Plot Transparency` with whatever shortcut you prefer.
+
+
+## Just the themes
+
+The on/off of the white-on-hover plot background is obtained by simply switching between two identical themes, one in which this is allowed, one in which it is not.
+
+If you only wish to install the themes, run `rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/Kandle.rstheme", apply = TRUE)` for the always-white background, or `rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/KandleDarkerPlot.rstheme", apply = TRUE)` for the white-on-hover.
