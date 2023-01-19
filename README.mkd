@@ -57,7 +57,9 @@ Alternately, the package will automatically add an addin to R Studio under `Addi
 The on/off of the bright-on-hover plot area is obtained by simply switching between two identical themes, one in which the plot is always bright, one in which the switching is allowed.
 
 If you wish to install just the themes (`.rstheme` files), run this for the always-bright plot background:
+
 `rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/Kandle.rstheme", apply = TRUE)`
 
 or this for the bright-on-hover one:
+
 `rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/KandleDarkerPlot.rstheme", apply = TRUE)`
