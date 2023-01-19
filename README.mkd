@@ -1,6 +1,6 @@
 # Kandle Theme for R Studio
 
-Just a theme for R Studio, carefully handcrafted to make the world's ugliest IDE look like [VS Code](https://github.com/tal7aouy/theme)! 
+Just a dark theme for R Studio, carefully handcrafted to make the world's ugliest IDE look like [VS Code](https://github.com/tal7aouy/theme)! 
 Supports darker plot area, rainbow parentheses, parentheses pair highlight, and function call highlight.
  
 ![code](img/code_ed.png)
@@ -8,19 +8,19 @@ Supports darker plot area, rainbow parentheses, parentheses pair highlight, and 
 
 ## Darker plot area
 
-If you find the plot area to be too bright, just turn the lights off! Highlight the plot only when mouse-hovering over it. This behavior can eventually be turned on and off in one click (see Usage for details). This  absolutely does not change the plot's original properties (i.e. when exporting).
+Coding in complete darkness? Brighten the plot area only when mouse-hovering over it. This behavior can eventually be turned on and off in one click (see Usage for details). This does not change the plot's original properties (i.e. when exporting).
 
 ![plotscreencap.gif](img/plotscreencap.gif)
 
 
 ## Parentheses pair highlight
 
-A very nice animation, and some very nice rainbows too.
+Indeed, a very nice animation, and some very nice rainbows too.
 
 ![par.gif](img/par.gif)
 
 
-## A better looking IDE
+## For a better looking IDE
 
 I recommend in `Tools > Global options > Code > Display` activating `Highlight R Function Calls` and `Rainbow Parentheses`.
 
@@ -56,7 +56,7 @@ Alternately, the package will automatically add an addin to R Studio under `Addi
 
 The on/off of the bright-on-hover plot area is obtained by simply switching between two identical themes, one in which the plot is always bright, one in which the switching is allowed.
 
-If you wish to install just the themes (`.rstheme` files), run this for the always-bright plot background:
+If you wish to install the themes only (`.rstheme` files), run this for the always-bright plot:
 
 `rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/Kandle.rstheme", apply = TRUE)`
 
