@@ -8,52 +8,56 @@ Supports darker plot area, rainbow parentheses, parentheses pair highlight, and 
 
 ## Darker plot area
 
-If you find the plot area to be too bright, this theme implements a darker transparent plot background that highlights to white (or to the real background, if not white) only when mouse hovering over it (see picture for details). This behavior can eventually be turned on and off in one click. This  absolutely does not change the plot's original properties (i.e. when exporting).
+If you find the plot area to be too bright, just turn the lights off! Highlight the plot only when mouse-hovering over it. This behavior can eventually be turned on and off in one click (see Usage for details). This  absolutely does not change the plot's original properties (i.e. when exporting).
 
 ![plotscreencap.gif](img/plotscreencap.gif)
 
 
 ## Parentheses pair highlight
 
-Yes, a very nice animation.
+A very nice animation, and some very nice rainbows too.
 
 ![par.gif](img/par.gif)
 
 
-## Other stuff
+## A better looking IDE
 
 I recommend in `Tools > Global options > Code > Display` activating `Highlight R Function Calls` and `Rainbow Parentheses`.
 
 
-I also recommend using the theme in combination with [Darkstudio](https://github.com/rileytwo/darkstudio).
+I also recommend using the theme in combination with [Darkstudio](https://github.com/rileytwo/darkstudio), or something similar.
 
 ![mainview](img/mainview_ed.png)
 
 
 ## Usage
 
-Install dependencies:
+Dependencies:
 ```r
-install.packages("rstudioapi")
+install.packages(c("rstudioapi","devtools"))
 ```
 
-Install the theme package:
+Install the theme:
 ```r
 devtools::install_github('TheMrKingent/KandleTheme')
 KandleTheme::installKandle()
 ```
 
-To change the behavior of the plot area between white-on-hover and always-white background, use:
+To change the behavior of the plot area between bright-on-hover and always-bright, use:
 
 ```r
 KandleTheme::togglePlotTransparency()
 ```
 
-Alternately, the package will  automatically add an addin to R Studio under `Addins > KANDLETHEME > Toggle Plot Transparency` which will just call the above function. Restarting R Studio may be necessary to make the addin appear in the list. I find particularly useful to bind the addin to a key to quickly change the plot's behavior. This can be done in `Tools > Addins > Browse addins > Keyboard shortcuts` and just filling in the field for `Toggle Plot Transparency` with whatever shortcut you prefer.
+Alternately, the package will automatically add an addin to R Studio under `Addins > KANDLETHEME > Toggle Plot Transparency` which will just call the above function. Restarting R Studio may be necessary to make the addin appear in the list. I find particularly useful to bind the addin to a key to quickly change the plot's behavior. This can be done in `Tools > Addins > Browse addins > Keyboard shortcuts` and just filling in the field for `Toggle Plot Transparency` with whatever shortcut you prefer.
 
 
 ## Just the themes
 
-The on/off of the white-on-hover plot background is obtained by simply switching between two identical themes, one in which this is allowed, one in which it is not.
+The on/off of the bright-on-hover plot area is obtained by simply switching between two identical themes, one in which the plot is always bright, one in which the switching is allowed.
 
-If you only wish to install the themes, run `rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/Kandle.rstheme", apply = TRUE)` for the always-white plot background, or `rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/KandleDarkerPlot.rstheme", apply = TRUE)` for the white-on-hover one.
+If you wish to install just the themes (`.rstheme` files), run this for the always-bright plot background:
+`rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/Kandle.rstheme", apply = TRUE)`
+
+or this for the bright-on-hover one:
+`rstudioapi::addTheme("https://raw.githubusercontent.com/TheMrKingent/KandleTheme/master/inst/themes/KandleDarkerPlot.rstheme", apply = TRUE)`
