@@ -2,3 +2,4 @@ deploy.R
 inst/themes/Kandle.css
 dummyCode.R
 KandleTheme.Rproj
+.Rhistory
